@@ -6,7 +6,7 @@
 // i != j
 // 0 <= i, j < arr.length
 // arr[i] == 2 * arr[j]
- 
+
 // Solution:
 var checkIfExist = function (arr) {
     const hash = {}
@@ -30,3 +30,26 @@ checkIfExist(arr)
 
 
 
+// Old Answer:
+var checkIfExistOldAnswer = function (arr) {
+    let i = 0;
+    let result = false;
+
+    while (i < arr.length) {
+        if ((arr.filter(n => n === (arr[i] * 2) && n !== 0).length > 0) === true) {
+            // Filter through the arr in each iteration of this loop to check for a double, I guess.
+            // What a time sucker!
+            // This was one of the first leetcode problems I did!!!! So crazy how much I've changed!
+            result = true
+            i = arr.length + 1
+            // Why didn't I just use a for loop? Or just return true instead of manually breaking the loop?
+            // ?????????????????????????????? LOL silly goose!
+        } else { (++i) }
+    };
+
+    if (arr.filter(n => n === 0).length > 1) { result = true };
+
+    return result
+};
+
+checkIfExistOldAnswer(arr)
