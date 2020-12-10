@@ -6,7 +6,7 @@
 // i != j
 // 0 <= i, j < arr.length
 // arr[i] == 2 * arr[j]
-
+ 
 // Solution:
 var checkIfExist = function (arr) {
     const hash = {}
@@ -27,3 +27,6 @@ const arr = [10, 2, 5, 3]
 // that 10 has a double of 20, then we wouldn't know that we've seen 5's double when we look at 5 later! 
 // That's why we saved both the half and the double in our hash! :)
 checkIfExist(arr)
+
+
+

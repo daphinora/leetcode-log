@@ -13,7 +13,7 @@ var numberOfSteps  = function(num) {
         // if the num is odd, increase our steps counter and subtract one from num
         : (++steps) && (num -= 1)
     } return steps
-};
-
+}; 
+ 
 const num = 14;
 numberOfSteps(num)
