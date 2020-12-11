@@ -9,7 +9,7 @@
 
 // Solution:
 var checkIfExist = function (arr) {
-    const hash = {}
+    const hash = {};
     for (let i = 0; i < arr.length; i++) {
         if (!hash[arr[i]]) {
             // using a hash to remember what nums we've looked at - but we don't need
@@ -22,11 +22,21 @@ var checkIfExist = function (arr) {
     // this will only return false if the for loop never returns true!
 };
 
+var checkIfExistRobertStyle = function (arr) {
+    const hash = {};
+    for(let i = 0; i < arr.length; i++) {
+        if(hash[arr[i]*2]) {
+            return true
+        } else {hash[arr[i]] = true}
+    }
+    return false
+}
+
 const arr = [10, 2, 5, 3]
 // Look at our array! We see 10 first, which is the double of 5! If we only recorded in our hash
 // that 10 has a double of 20, then we wouldn't know that we've seen 5's double when we look at 5 later! 
 // That's why we saved both the half and the double in our hash! :)
-checkIfExist(arr)
+console.log(checkIfExistRobertStyle(arr))
 
 
 
@@ -52,4 +62,4 @@ var checkIfExistOldAnswer = function (arr) {
     return result
 };
 
-checkIfExistOldAnswer(arr)
+// checkIfExistOldAnswer(arr)
