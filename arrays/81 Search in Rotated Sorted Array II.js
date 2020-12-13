@@ -60,7 +60,7 @@ var searchNew = function(nums, target) {
     let y = nums.length - 1;
     let rightNum = nums[y];
         
-    if (!leftNum) return false;
+    if(!Number.isInteger(leftNum)) return false;
     
     for(let i = 0; i < nums.length; i++) {
         if(leftNum == target | rightNum == target) {
