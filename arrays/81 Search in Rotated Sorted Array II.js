@@ -50,3 +50,29 @@ searchSecond(nums, target)
 
 // Higher order functions exist to make our lives easier, but it's always best to know
 // how to do something without them. It shows a deeper understanding of what you're doing.
+
+
+// Update: 12 December 2020
+
+var searchNew = function(nums, target) {
+    let x = 0;
+    let leftNum = nums[x];
+    let y = nums.length - 1;
+    let rightNum = nums[y];
+        
+    if (!leftNum) return false;
+    
+    for(let i = 0; i < nums.length; i++) {
+        if(leftNum == target | rightNum == target) {
+            return true
+        } else if(leftNum > target && rightNum < target || x === y) {
+            return false
+        } else if(leftNum < target) {
+            leftNum = nums[x++]
+        } else if(rightNum > target) {
+            rightNum = nums[y--]
+        }
+    }
+};
+
+searchNew(nums, target)
