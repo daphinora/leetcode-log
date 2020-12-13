@@ -33,4 +33,4 @@ var fizzBuzz = function(n) {
 const n = 15;
 // fizzBuzz will create an array full of numbers from 1 to n and
 // replace every multiple of 3, 5, or 3 and 5 with different strings
-fizzBuzz(n)
+console.log(fizzBuzz(n))

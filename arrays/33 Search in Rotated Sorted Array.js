@@ -33,6 +33,10 @@ var search = function(nums, target) {
     }
 };
 
+const nums = [4,5,6,7,0,1,2];
+const target = 0;
+console.log(search(nums, target))
+
 // Honestly, it's hideous, but it's pretty similar to 81. 
 // I decided to forgo the ".filter" higher level method this time by
 // manually searching through the array instead! it's a bit of a mess

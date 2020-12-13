@@ -23,4 +23,4 @@ var plusOne = function (digits) {
     return digits
 };
 
-plusOne(digits)
+console.log(plusOne(digits))

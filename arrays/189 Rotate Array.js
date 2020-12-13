@@ -14,4 +14,4 @@ var rotate = function(nums, k) {
     nums.splice(nums.length - k).reverse().forEach(n => nums.unshift(n))
 }; 
 
-rotate(nums, k)
+console.log(rotate(nums, k))

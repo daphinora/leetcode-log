@@ -24,4 +24,4 @@ const twoSum = function (nums, target) {
     }
 };
 
-twoSum(nums, target)
+console.log(twoSum(nums, target))

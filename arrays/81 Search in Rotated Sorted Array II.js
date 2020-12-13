@@ -75,4 +75,4 @@ var searchNew = function(nums, target) {
     }
 };
 
-searchNew(nums, target)
+console.log(searchNew(nums, target))

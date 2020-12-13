@@ -22,4 +22,4 @@ var findDuplicate = function(nums) {
 };
 
 const nums = [1,3,4,2,2]
-findDuplicate(nums)
+console.log(findDuplicate(nums))

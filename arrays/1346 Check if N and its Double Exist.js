@@ -22,6 +22,8 @@ var checkIfExist = function (arr) {
     // this will only return false if the for loop never returns true!
 };
 
+console.log(checkIfExist(arr))
+
 var checkIfExistRobertStyle = function (arr) {
     const hash = {};
     for(let i = 0; i < arr.length; i++) {
@@ -62,4 +64,4 @@ var checkIfExistOldAnswer = function (arr) {
     return result
 };
 
-// checkIfExistOldAnswer(arr)
+console.log(checkIfExistOldAnswer(arr))

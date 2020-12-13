@@ -22,7 +22,7 @@ var findDuplicates = function (nums) {
 };
 
 const nums = [4, 3, 2, 7, 8, 2, 3, 1]
-findDuplicates(nums)
+console.log(findDuplicates(nums))
 
 // honestly.... I'm not proud of this one. It takes up too much time and memory.
 // I might revisit this one in the future. At least it works for now. Still, though.

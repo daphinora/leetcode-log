@@ -11,4 +11,4 @@ var isPalindrome = function (s) {
     return string === string.split('').reverse().join('')
 }
 
-isPalindrome(s)
+console.log(isPalindrome(s))

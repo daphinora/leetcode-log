@@ -31,4 +31,4 @@ var twoSum = function(numbers, target) {
     }
 };
 
-twoSum(numbers, target)
+console.log(twoSum(numbers, target))
