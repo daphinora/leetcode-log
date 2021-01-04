@@ -7,7 +7,7 @@
 
 // Solution:
 
-const digits = [1,2,3]
+const digits = [1, 2, 3]
 
 var plusOne = function (digits) {
     let index = digits.length - 1

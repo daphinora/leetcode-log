@@ -4,7 +4,7 @@
 // But for multiples of three it should output “Fizz” instead of the number and for the multiples of five output “Buzz”. For numbers which are multiples of both three and five output “FizzBuzz”.
 
 // Solution:
-var fizzBuzz = function(n) {
+var fizzBuzz = function (n) {
     let arr = [];
     for (let i = 1; i <= n; i++) {
         if (i % 3 === 0 && i % 5 === 0) {
@@ -22,10 +22,10 @@ var fizzBuzz = function(n) {
             // if our number can only be divided
             // evenly by 5 but not 3 then
             // add Buzz to our array
-        } else {arr.push(`${i}`)}
-            // if our number cannot be divided
-            // cleanly by 3 or 5 then just
-            // add the number itself to our array
+        } else { arr.push(`${i}`) }
+        // if our number cannot be divided
+        // cleanly by 3 or 5 then just
+        // add the number itself to our array
     }
     return arr
 };

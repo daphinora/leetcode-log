@@ -4,10 +4,10 @@
 // There is only one duplicate number in nums, return this duplicate number.
 
 // Solution:
-var findDuplicate = function(nums) {
+var findDuplicate = function (nums) {
     let hash = {}
-    for(let i = 0; i < nums.length; i++) {
-        if(hash[nums[i]] > 0) {
+    for (let i = 0; i < nums.length; i++) {
+        if (hash[nums[i]] > 0) {
             return nums[i]
             // if the element we're looking at
             // has already been added as a key 
@@ -21,5 +21,5 @@ var findDuplicate = function(nums) {
     }
 };
 
-const nums = [1,3,4,2,2]
+const nums = [1, 3, 4, 2, 2]
 console.log(findDuplicate(nums))

@@ -9,10 +9,10 @@
 // You may assume that each input would have exactly one solution and you may not use the same element twice.
 
 // Solution:
-const numbers = [2,7,11,15];
+const numbers = [2, 7, 11, 15];
 const target = 9;
 
-var twoSum = function(numbers, target) {
+var twoSum = function (numbers, target) {
     let lowBase = 0;
     let highBase = numbers.length - 1
 
@@ -20,7 +20,7 @@ var twoSum = function(numbers, target) {
         let lowNum = numbers[lowBase]
         let highNum = numbers[highBase]
         let tempSum = lowNum + highNum;
-        
+
         if (tempSum === target) {
             return [lowBase + 1, highBase + 1]
         } else if (tempSum > target) {

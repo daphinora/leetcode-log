@@ -26,10 +26,10 @@ console.log(checkIfExist(arr))
 
 var checkIfExistRobertStyle = function (arr) {
     const hash = {};
-    for(let i = 0; i < arr.length; i++) {
-        if(hash[arr[i]*2]) {
+    for (let i = 0; i < arr.length; i++) {
+        if (hash[arr[i] * 2]) {
             return true
-        } else {hash[arr[i]] = true}
+        } else { hash[arr[i]] = true }
     }
     return false
 }

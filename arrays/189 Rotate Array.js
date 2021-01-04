@@ -7,11 +7,11 @@
 // Could you do it in-place with O(1) extra space?
 
 // Solution:
-const nums = [1,2,3,4,5,6,7];
+const nums = [1, 2, 3, 4, 5, 6, 7];
 const k = 3;
 
-var rotate = function(nums, k) { 
+var rotate = function (nums, k) {
     nums.splice(nums.length - k).reverse().forEach(n => nums.unshift(n))
-}; 
+};
 
 console.log(rotate(nums, k))

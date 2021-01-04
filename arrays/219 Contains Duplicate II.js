@@ -5,20 +5,20 @@
 // and the absolute difference between i and j is at most k.
 
 // Solution:
-var containsNearbyDuplicate = function(nums, k) {
+var containsNearbyDuplicate = function (nums, k) {
     let result = false;
     let hash = {};
-    for(let i = 0; i < nums.length; i++) {
-        if(hash[nums[i]] || hash[nums[i]] === 0) {
-            if(k >= Math.abs(i - hash[nums[i]])) {
+    for (let i = 0; i < nums.length; i++) {
+        if (hash[nums[i]] || hash[nums[i]] === 0) {
+            if (k >= Math.abs(i - hash[nums[i]])) {
                 result = true
-            } else {hash[nums[i]] = i}
-        } else {hash[nums[i]] = i}
+            } else { hash[nums[i]] = i }
+        } else { hash[nums[i]] = i }
     }
     return result
 };
 
-const nums = [1,2,3,1,2,3]
+const nums = [1, 2, 3, 1, 2, 3]
 const k = 2
 
-console.log(containsNearbyDuplicate(nums,k));
+console.log(containsNearbyDuplicate(nums, k));

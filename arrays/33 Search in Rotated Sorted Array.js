@@ -7,33 +7,33 @@
 // If target is found in the array return its index, otherwise, return -1.
 
 // Solution:
-var search = function(nums, target) {
+var search = function (nums, target) {
     let leftNum = nums[0];
     let x = 1
     let rightNum = nums[nums.length - x];
-    
-    for(let i = 0; i < nums.length; i++) {
+
+    for (let i = 0; i < nums.length; i++) {
         // console.log(leftNum, rightNum)
-        if(leftNum == target) {
+        if (leftNum == target) {
             // console.log("found left")
             return nums.indexOf(leftNum)
-        } else if(rightNum == target) {
+        } else if (rightNum == target) {
             // console.log("found right")
             return nums.indexOf(rightNum)
-        } else if((leftNum > target && rightNum < target) || (nums.indexOf(leftNum) === nums.indexOf(rightNum))) {
+        } else if ((leftNum > target && rightNum < target) || (nums.indexOf(leftNum) === nums.indexOf(rightNum))) {
             // console.log("dead; target not found :(", leftNum, i, target)
-            return "-1" 
-        } else if(leftNum < target) {
+            return "-1"
+        } else if (leftNum < target) {
             // console.log("left moves right")
-            leftNum = nums[i+1]
-        } else if(rightNum > target) {
+            leftNum = nums[i + 1]
+        } else if (rightNum > target) {
             // console.log("right moves left")
             rightNum = nums[nums.length - (x += 1)]
         }
     }
 };
 
-const nums = [4,5,6,7,0,1,2];
+const nums = [4, 5, 6, 7, 0, 1, 2];
 const target = 0;
 console.log(search(nums, target))
 

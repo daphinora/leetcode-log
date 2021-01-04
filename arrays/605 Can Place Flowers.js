@@ -18,7 +18,7 @@ var canPlaceFlowers = function (flowerbed, n) {
                 // and the next element equals zero OR the current element is the last element in the array
                 (flowerbed[i - 1] == 0 || i == 0)
                 // and the previous element equals zero OR the current element is the first in the array
-                ) {
+            ) {
                 flowerbed.splice(i, 1, 1);
                 // then replace the current 0 with a 1
                 n -= 1;
@@ -26,7 +26,7 @@ var canPlaceFlowers = function (flowerbed, n) {
             }
         } else {
             // if we planted all of our flowers into the flowerbed, return true! well done!
-            return true 
+            return true
         }
     }
     // this will only hit if we weren't able to put all of our flowers into the flowerbed

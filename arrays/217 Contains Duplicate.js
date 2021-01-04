@@ -5,15 +5,15 @@
 // in the array, and it should return false if every element is distinct.
 
 // Solution:
-var containsDuplicate = function(nums) {
+var containsDuplicate = function (nums) {
     let hash = {};
-    for(let i = 0; i < nums.length; i++) {
-        if(hash[nums[i]]) {
+    for (let i = 0; i < nums.length; i++) {
+        if (hash[nums[i]]) {
             return true
-        } else {hash[nums[i]] = 1}
+        } else { hash[nums[i]] = 1 }
     }
     return false
 };
 
-const nums = [1,2,3,1]
+const nums = [1, 2, 3, 1]
 console.log(containsDuplicate(nums));
